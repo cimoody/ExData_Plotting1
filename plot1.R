@@ -10,7 +10,7 @@ column.names = colnames(thisTable);
 # Fix Dates
 hpc[, Date := as.Date(Date, format = "%d/%m/%Y")];
 hpc[, Time := as.ITime(Time)];
-hpc2 <- hpc[hpc$Date=='2007-02-01' | hpc$Date=='2007-02-02', ]
+hpc2 <- hpc[hpc$Date=='2007-02-01' | hpc$Date=='2007-02-02', ];
 
 # Make Plot
 png("plot1.png", width = 480, height = 480, units = "px");
