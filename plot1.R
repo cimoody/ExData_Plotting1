@@ -5,7 +5,7 @@ require(lubridate);
 
 hpc <- fread("household_power_consumption.txt", header=TRUE,
              nrows=5000000, skip=0, verbose=TRUE, na.strings = "?");
-column.names = colnames(thisTable);
+column.names = colnames(hpc);
 
 # Fix Dates
 hpc[, Date := as.Date(Date, format = "%d/%m/%Y")];
