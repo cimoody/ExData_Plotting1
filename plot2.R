@@ -17,5 +17,5 @@ hpc2 <- cbind(hpc2, DateTime);
 png("plot2.png", width = 480, height = 480, units = "px");
 par(mar=c(4,4,1,1));
 plot(x = hpc2$DateTime, y = hpc2$Global_active_power, xlab = "",
-     ylab = "Global Active Power", type = "l")
+     ylab = "Global Active Power", type = "l");
 dev.off();
